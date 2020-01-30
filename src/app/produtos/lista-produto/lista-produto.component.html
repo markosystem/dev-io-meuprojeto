@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="card-deck mb-3 text-center">
+        <div *ngFor="let produto of produtos" class="card mb-4 shadow-sm">
+            <div class="card-header">
+                <h5 class="my-0 font-weight-normal">{{produto.nome | titlecase}}</h5>
+            </div>
+            <div class="card-body">
+                <div [ngSwitch]="produto.promocao">
+                    <div *ngSwitchCase="true">Promoção!!!</div>
+                    <div *ngSwitchDefault>Por apenas:</div>
+                </div>
+
+                <div *ngIf="produto.promocao">
+                    <h3 class="card-title pricing-card-title">
+                        De <del>{{produto.valor | currency:'BRL':true:'1.2-2':'pt'}} </del><br/>
+                        Para {{produto.valorPromo | currency:'BRL':true:'1.2-2':'pt'}}<br/>
+                    </h3>
+                </div>
+                <h3 *ngIf="!produto.promocao" class="card-title pricing-card-title">{{produto.valorPromo | currency:'BRL':true:'1.2-2':'pt'}} </h3>
+                
+                <a [routerLink]="['/produto-detalhe', produto.id]">
+                    <img [src]="produto.imagem" alt="Imagem" width="100%" />
+                </a>
+                <button type="button" class="btn btn-lg btn-block btn-outline-primary">Comprar</button>
+            </div>
+        </div>
+    </div>
+</div>

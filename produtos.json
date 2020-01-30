@@ -1,0 +1,44 @@
+{
+    "produtos": [
+        {
+            "id": 1,
+            "nome": "mouse Gamer",
+            "valor": "9.00",
+            "promocao": true,
+            "valorPromo": "6.00",
+            "imagem": "https://images-submarino.b2w.io/spacey/2018/11/13/produto.png"
+        },
+        {
+            "id": 2,
+            "nome": "Teclado",
+            "valor": "7.00",
+            "promocao": false,
+            "valorPromo": "5.00",
+            "imagem": "https://images-submarino.b2w.io/spacey/2018/11/13/produto.png"
+        },
+        {
+            "id": 3,
+            "nome": "CPU",
+            "valor": "70.00",
+            "promocao": false,
+            "valorPromo": "50.00",
+            "imagem": "https://images-submarino.b2w.io/spacey/2018/11/13/produto.png"
+        },
+        {
+            "id": 4,
+            "nome": "teclado",
+            "valor": "7.00",
+            "promocao": false,
+            "valorPromo": "3.00",
+            "imagem": "https://images-submarino.b2w.io/spacey/2018/11/13/produto.png"
+        },
+        {
+            "id": 5,
+            "nome": "Placa de Vídeo",
+            "valor": "200.00",
+            "promocao": true,
+            "valorPromo": "150.00",
+            "imagem": "https://images-submarino.b2w.io/spacey/2018/11/13/produto.png"
+        }
+    ]
+}
